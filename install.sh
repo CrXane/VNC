@@ -10,5 +10,15 @@ sudo apt-get install filezilla -y
 sudo apt-get install xfce4-terminal -y
 sudo apt-get install synaptic -y
 
-echo "set a password and execute ./install2.sh"
-vncserver
+mkdir ~/.vnc
+mv xstartup ~/.vnc/xstartup
+mv tightvncserver.conf ~/.vnc/tightvncserver.conf
+mv .reset-vnc ~/.reset-vnc
+
+chmod +x ~/.vnc/xstartup
+chmod +X ~/.vnc/tightvncserver.conf
+chmod +x ~/.reset-vnc
+
+echo "VNC installation complete"
+echo "If ever having issues logging in"
+echo "Go to Home directory and execute ./.reset-vnc"
