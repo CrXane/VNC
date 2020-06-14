@@ -11,9 +11,13 @@ sudo apt-get install xfce4-terminal -y
 sudo apt-get install synaptic -y
 
 mkdir ~/.vnc
+test -e xstartup || wget -q https://raw.githubusercontent.com/CrXane/VNC/master/xstartup
 mv xstartup ~/.vnc/xstartup
+test -e tightvncserver.conf || wget -q https://raw.githubusercontent.com/CrXane/VNC/master/tightvncserver.conf
 mv tightvncserver.conf ~/.vnc/tightvncserver.conf
+test -e .reset-vnc || wget -q https://raw.githubusercontent.com/CrXane/VNC/master/.reset-vnc
 mv .reset-vnc ~/.reset-vnc
+chmod ~/.reset-vnc
 
 chmod +x ~/.vnc/xstartup
 chmod +X ~/.vnc/tightvncserver.conf
@@ -21,4 +25,4 @@ chmod +x ~/.reset-vnc
 
 echo "VNC installation complete"
 echo "If ever having issues logging in"
-echo "Go to Home directory and execute ./.reset-vnc"
+echo "Execute bash ~/.reset-vnc"
