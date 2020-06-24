@@ -23,5 +23,6 @@ chmod +X ~/.vnc/tightvncserver.conf
 chmod +x ~/.reset-vnc
 
 echo "VNC installation complete"
+echo "Now run vncserver to setup the login details"
 echo "If ever having issues logging in"
 echo "Execute bash ~/.reset-vnc"
