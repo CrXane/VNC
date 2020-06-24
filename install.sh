@@ -11,11 +11,11 @@ sudo apt-get install xfce4-terminal -y
 sudo apt-get install synaptic -y
 
 mkdir ~/.vnc
-test -e xstartup || wget -q https://raw.githubusercontent.com/CrXane/VNC/master/xstartup
+test -e xstartup || wget https://raw.githubusercontent.com/CrXane/VNC/master/xstartup
 mv xstartup ~/.vnc/xstartup
-test -e tightvncserver.conf || wget -q https://raw.githubusercontent.com/CrXane/VNC/master/tightvncserver.conf
+test -e tightvncserver.conf || wget https://raw.githubusercontent.com/CrXane/VNC/master/tightvncserver.conf
 mv tightvncserver.conf ~/.vnc/tightvncserver.conf
-test -e .reset-vnc || wget -q https://raw.githubusercontent.com/CrXane/VNC/master/.reset-vnc
+test -e .reset-vnc || wget https://raw.githubusercontent.com/CrXane/VNC/master/.reset-vnc
 mv .reset-vnc ~/.reset-vnc
 chmod ~/.reset-vnc
 
