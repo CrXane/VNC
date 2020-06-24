@@ -17,7 +17,6 @@ test -e tightvncserver.conf || wget https://raw.githubusercontent.com/CrXane/VNC
 mv tightvncserver.conf ~/.vnc/tightvncserver.conf
 test -e .reset-vnc || wget https://raw.githubusercontent.com/CrXane/VNC/master/.reset-vnc
 mv .reset-vnc ~/.reset-vnc
-chmod ~/.reset-vnc
 
 chmod +x ~/.vnc/xstartup
 chmod +X ~/.vnc/tightvncserver.conf
